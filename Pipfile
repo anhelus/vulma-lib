@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+roboflow = "*"
+numpy = "*"
+opencv-python = "*"
+tensorflow = "*"
+tensorflow-gpu = "*"
+jupyterlab = "*"
+autokeras = "*"
+scikit-learn = "*"
+scikit-image = "*"
+matplotlib = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
