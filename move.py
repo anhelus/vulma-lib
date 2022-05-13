@@ -13,7 +13,7 @@ if not img_folder.exists():
 if not annot_folder.exists():
     annot_folder.mkdir(parents=True, exist_ok=True)
 
-images = glob('**/*.jpg', recursive=True)
+images = glob('./bridges/**/*.jpg', recursive=True)
 
 counter = 1
 for image in images:

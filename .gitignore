@@ -1,2 +1,10 @@
 dataset/
 dataset_one_vs_all/
+annots/
+images/
+bridges/
+ipynb_checkpoints/
+__pycache__
+
+*.h5
+*.csv
