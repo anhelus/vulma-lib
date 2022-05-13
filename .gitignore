@@ -9,4 +9,6 @@ __pycache__
 *.h5
 *.csv
 
-models/
+models/ 
+
+.ipynb_checkpoints/
