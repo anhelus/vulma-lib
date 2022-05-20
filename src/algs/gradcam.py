@@ -8,6 +8,8 @@ import cv2
 from tensorflow.keras.preprocessing.image import (img_to_array, load_img)
 from tensorflow.keras.applications import imagenet_utils
 
+import imutils
+
 
 class GradCAM():
     """ Implements the GradCAM algorithm.
@@ -131,9 +133,9 @@ class GradCAM():
 
         return (heatmap, output)
 
-import imutils
 
-def visualize(model, image_path, size):
+def visualize(model, image_path, size, outpath):
+    image_path = str(image_path)
     img = cv2.imread(image_path)
     image = load_img(image_path, target_size=size)
     image = img_to_array(image)
@@ -147,6 +149,7 @@ def visualize(model, image_path, size):
     (heatmap, output) = cam.overlay_heatmap(heatmap, img, alpha=0.5)
     output = imutils.resize(output, height=700)
     cv2.imshow("Output", output)
+    cv2.imwrite(outpath, output)
     cv2.waitKey(0)
 
 

@@ -14,6 +14,7 @@ autokeras = "*"
 scikit-learn = "*"
 scikit-image = "*"
 matplotlib = "*"
+imutils = "*"
 
 [dev-packages]
 
