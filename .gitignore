@@ -12,3 +12,5 @@ __pycache__
 models/ 
 
 .ipynb_checkpoints/
+
+logs/

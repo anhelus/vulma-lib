@@ -150,7 +150,7 @@ def visualize(model, image_path, size, outpath):
     output = imutils.resize(output, height=700)
     cv2.imshow("Output", output)
     cv2.imwrite(outpath, output)
-    cv2.waitKey(0)
+    cv2.waitKey(10)
 
 
 """
